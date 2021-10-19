@@ -6,10 +6,8 @@ function upperCaseCustomerName() {
     customerName = customerName.toUpperCase();
 }
 
-//Canvas instructions: "Write a function that when called, declares a variable called bestCustomer in global scope 
-//and assigns it to be 'not bob'". - This is not possible??
 function setBestCustomer() {
-    window.bestCustomer = 'not bob';
+    globalThis.bestCustomer = 'not bob';
 } 
 
 function overwriteBestCustomer(newName) {
